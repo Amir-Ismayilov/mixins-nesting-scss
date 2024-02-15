@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="developer" content="Amir Ismayilov" />
     <title>Steak in | SCSS</title>
-    <link rel="stylesheet" href="assets/app.css" />
+    <link rel="stylesheet" href="assets/scss/main.css" />
 </head>
 
 <body>
-    <section class="section-start">
+    <section class="section__start">
         <header class="container">
             <nav class="menu">
                 <a class="menu__logo" href="javascript:void(0)">
@@ -18,26 +18,84 @@
                 </a>
 
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="javascript:void(0)">Home</a></li>
+                    <li class="menu__item"><a href="index.html">Home</a></li>
                     <li class="menu__item"><a href="javascript:void(0)">Pages</a></li>
                     <li class="menu__item"><a href="javascript:void(0)">Menu</a></li>
                     <li class="menu__item"><a href="javascript:void(0)">Blog</a></li>
-                    <li class="menu__item"><a href="javascript:void(0)">Shop</a></li>
-                    <li class="menu__item"><a href="javascript:void(0)">Contact</a></li>
+                    <li class="menu__item"><a href="shop.html">Shop</a></li>
+                    <li class="menu__item"><a href="contact.html">Contact</a></li>
                     <li class="menu__item"><a href="javascript:void(0)">Book A Table</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="box">
-            <h1 class="box__title">
+            <h1 class="main__title">
                 We are food master
             </h1>
 
-            <p class="box__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, maiores aut velit consectetur cupiditate
+            <p class="box__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, maiores aut velit
+                consectetur cupiditate
                 sit excepturi odio eveniet, iste porro architecto.
             </p>
         </div>
+    </section>
+
+    <section class="section__greetings">
+        <div class="container">
+            <div class="greetings__wrapper">
+                <div class="greetings__wrapper__left">
+                    <h1 class="main__title">Hello Dear</h1>
+                    <h3 class="second__title">We Are Steak In!</h3>
+                    <p class="third__title">Steak In has the perfect place to enjoy fine food and great cocktails with
+                        excellent service, in comfortable atmospheric surroundings. We have a soft dining room, combined
+                        with an open kitchen, coffee take out bar and alovely awesome on site coffee roastery.</p>
+                    <button class="btn__main">book a table</button>
+                </div>
+
+                <div class="greetings__wrapper__right">
+                    <img src="assets/images/greeting.jpg" alt="greetings_image_1">
+                    <img src="assets/images/greeting_2.jpg" alt="greetings_image_2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section__footer">
+        <footer class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer__data">
+                        <h2>FOLLOW US</h2>
+                        <ul>
+                            <li>facebook</li>
+                            <li>twitter</li>
+                            <li>linkedin</li>
+                            <li>instagram</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer__data">
+                        <img src="assets/images/logo_light.png" alt="main__logo">
+                        <p class="third__title">
+                            Steak In has the perfect place to enjoy fine food and great cocktails with excellent
+                            service, in
+                            comfortable atmospheric surroundings.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="footer__data">
+                        <h2>NESWLETTER</h2>
+                        <input type="email" placeholder="Subscribe Our Newsletter">
+                    </div>
+                </div>
+            </div>
+        </footer>
     </section>
 </body>
 
