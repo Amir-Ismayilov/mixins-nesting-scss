@@ -149,6 +149,16 @@ a {
   align-items: center;
   padding-top: 20px;
 }
+.menu .mobile__mobile {
+  display: none;
+}
+@media screen and (max-width: 776px) {
+  .menu .mobile__mobile {
+    color: #fff;
+    font-size: 2.5rem;
+    display: block;
+  }
+}
 .menu__logo {
   max-width: 150px;
 }
@@ -162,11 +172,17 @@ a {
   gap: 15px;
   color: #fff;
 }
+@media screen and (max-width: 776px) {
+  .menu__list {
+    display: none;
+  }
+}
 .menu__item {
   font-size: 14px;
   font-family: "Poppins";
   text-transform: uppercase;
   font-weight: 600;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .section__footer {
@@ -187,6 +203,9 @@ a {
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 26px;
+}
+.section__footer .footer__data p {
+  color: #fff;
 }
 .section__footer .footer__data img {
   margin-bottom: 8px;
@@ -212,7 +231,6 @@ a {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  filter: brightness(0.8);
   height: 100vh;
 }
 .section__start .box {
@@ -251,6 +269,7 @@ a {
 }
 .section__greetings .greetings__wrapper__left p {
   margin: 24px 0;
+  color: #222;
 }
 .section__greetings .greetings__wrapper__right {
   display: flex;
@@ -291,10 +310,41 @@ a {
 .section__contact {
   padding: 60px 0;
 }
-.section__contact .section__contact__right .form__input {
+.section__contact__left .main__info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  padding: 50px 0;
+}
+.section__contact__left .main__info__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+}
+.section__contact__left .main__info__item h2 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 19px;
+  color: #222;
+}
+.section__contact__left .main__info__item p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #a5a5a5;
+  margin-bottom: 5px;
+}
+.section__contact__left .main__info__item span {
+  font-size: 14px;
+  line-height: 1;
+  color: #bb9356;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.section__contact__right .form__input {
   margin-bottom: 30px;
 }
-.section__contact .section__contact__right .form__input input {
+.section__contact__right .form__input input {
   background-color: #fff;
   border-radius: 1px;
   border: 2px solid #eee;
@@ -305,7 +355,7 @@ a {
   transition: all 0.3s linear 0ms;
   width: 100%;
 }
-.section__contact .section__contact__right button[type=submit] {
+.section__contact__right button[type=submit] {
   background-color: #222;
   font-size: 14px;
   border: none;
@@ -380,7 +430,7 @@ a {
      object-fit: cover;
 }
 .section__shop__item .image__wrapper::after {
-  content: "add to cart";
+  content: "click";
   position: absolute;
   bottom: 50%;
   left: 50%;
@@ -414,4 +464,41 @@ a {
   font-size: 16px;
   color: #bb9356;
   font-weight: 600;
+}
+
+.__pages {
+  position: relative;
+  background-image: url(../../assets/images/background/bg-pages.jpeg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50vh !important;
+}
+
+.section__pages {
+  padding: 80px 0;
+}
+.section__pages__bg {
+  background-image: url(../../assets/images/chefs/bread.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 120px 0;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.section__pages__bg h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #fff;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.section__pages__bg p {
+  color: #bb9356;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

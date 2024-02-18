@@ -44,6 +44,6 @@
   .third__title {
     font-size: 15px;
     line-height: 1.7;
-    color: map-get($myListColor, "third-title");
+    // color: map-get($myListColor, "third-title");
     display: inline-block;
   }

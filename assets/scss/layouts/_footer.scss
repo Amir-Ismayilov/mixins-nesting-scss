@@ -13,6 +13,9 @@
       color: map-get($myListColor, "main-font-color");
       margin-bottom: 26px;
     }
+    p {
+      color: map-get($myListColor, "main-font-color");
+    }
     img {
       margin-bottom: 8px;
     }
